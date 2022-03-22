@@ -1,0 +1,23 @@
+/*
+ * Algoritmo que armazene X números em um vetor e calcule o valor médio do vetor.
+ */
+
+programa
+{
+	inclua biblioteca Matematica
+ --> mat
+	
+	funcao inicio()
+	{
+		real numeros[5], result=0.0
+
+		escreva("Digite 5 valores para saber o valor médio: ","\n")
+		para(inteiro i=0; i <= 4; i++){
+			leia(numeros[i])
+
+			result += numeros[i]/5
+
+		}
+		escreva("\nO valor médio dos valores inseridos é: ", mat.arredondar(result, 2))
+	}
+}
